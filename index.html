@@ -1,0 +1,3138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <link
+      href="./src/css/output.css"
+      rel="stylesheet" />
+    <title>Call-Helper</title>
+   <link rel="stylesheet" href="./src/css/main.css" />
+  </head>
+  <body>
+    <!--#region Header -->
+    <header class="text-center py-4">
+      <h1 class="text-black font-bold text-4xl">
+        Call-Helper
+      </h1>
+    </header>
+    <!--#endregion -->
+    <!--#region Begrüßung -->
+    <div
+      class="Begrüßung flex flex-flow flex-col bg-fuchsia-100 py-4 px-1 w-full h-fit">
+      <h1 class="text-4xl font-bold mx-auto">
+        Begrüßung
+      </h1>
+      <br />
+      <div class="flex flex-flow flex-col gap-0">
+        <div
+          class="flex flex-flow flex-row gap-0">
+          <p class="text-2xl font-normal">
+            Hallo, ich bin Herr Mahani.Ich rufe
+            von Fenixcallcenter an.Ich hoffe ,dass
+            es Ihnen gut geht. Sie haben bei uns
+          </p>
+          <!-- Dropdown-Menü für Produktauswahl -->
+          <div
+            class="ProduktNamen w-[20%] mx-0.5">
+            <select
+              id="menu"
+              class="select select-bordered border-b-black bg-white w-full max-w-xs text-2xl font-normal rounded-2xl">
+              <option disabled selected>
+                Namen des Produkts
+              </option>
+              <option value="Paratozol">
+                Paratozol
+              </option>
+              <option value="ArtiZynt (Kapseln)">
+                ArtiZynt (Kapseln)
+              </option>
+              <option value="Bioritmix K21">
+                Bioritmix K21
+              </option>
+              <option value="Cardiotens PLUS">
+                Cardiotens PLUS
+              </option>
+              <option value="Diaform RX">
+                Diaform RX
+              </option>
+              <option
+                value="Flexosamine / ArtiZynt Gel">
+                Flexosamine / ArtiZynt Gel
+              </option>
+              <option
+                value="Hypocardis / Cardiotens">
+                Hypocardis / Cardiotens
+              </option>
+              <option value="Ideal Fit">
+                Ideal Fit
+              </option>
+              <option value="Ideal Fit Turbo">
+                Ideal Fit Turbo
+              </option>
+              <option value="Prostalis">
+                Prostalis
+              </option>
+              <option value="OptiPills">
+                OptiPills
+              </option>
+              <option value="SLIMJET">
+                SLIMJET
+              </option>
+              <option value="Varicold">
+                Varicold
+              </option>
+            </select>
+          </div>
+        </div>
+
+        <p class="text-2xl mx-auto font-normal">
+          bestellt, richtig? Ich möchte Ihnen
+          gerne ein paar Fragen zu Ihrer
+          Bestellung stellen, damit wir Ihnen den
+          bestmöglichen Service bieten können.
+          Sind Sie damit zufrieden?
+        </p>
+      </div>
+    </div>
+    <!--#endregion -->
+    <!--#region Erste-Pause -->
+    <div
+      class="Erste-Pause w-full h-fit bg-red-300 flex flex-flow flex-col">
+      <p class="text-2xl mx-auto font-normal">
+        Wir geben hier Kunde Zeit für eine
+        Antwort. Wir schreiben hier seine
+        Beschwerden auf.
+      </p>
+    </div>
+    <!--#endregion -->
+    <!--#region Fragen stellen -->
+    <div
+      class="EinwändeBearbeitung w-full h-fit bg-fuchsia-100 flex flex-flow flex-col p-1">
+      <p class="text-2xl font-normal">
+        Hier stellen wir Fragen zu den Produkten ,
+        um die Beschwerden des Kunden zu verstehen
+        und um ihm die bestmögliche Unterstützung
+        zu bieten und seine Logik zu verstehen.
+      </p>
+      <!-- Fragen zu Paratozol -->
+      <div
+        id="Paratozol"
+        class="content Fragen-zu-Paratozol w-full h-fit bg-fuchsia-100 flex-flow flex-col p-1 text-2xl font-normal hidden">
+        <h3>
+          Fragen zu Paratozol (Gesprächsbeginn)
+        </h3>
+
+        <p>
+          Sagen Sie, haben Sie während der
+          Einnahme schon Veränderungen bemerkt
+          oder eher noch nicht?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+        <p>
+          Was belastet Sie aktuell mehr:
+          Müdigkeit/Antrieb, Verdauung oder
+          Haut/Allergien?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+        <p>
+          Gibt es Blähungen, Völlegefühl nach dem
+          Essen oder unregelmäßigen Stuhlgang?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+        <p>
+          Haben Sie unangenehmen Mundgeruch,
+          besonders morgens, bemerkt?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+        <p>
+          Gibt es Juckreiz, Hautausschläge,
+          Allergien oder neue Unverträglichkeiten?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+        <p>
+          Wie ist Ihr Schlaf: wachen Sie erholt
+          auf oder eher nicht?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+        <p>
+          Gab es während der Einnahme wenigstens
+          kleine positive Veränderungen?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+        <p>
+          Haben Sie den Kurs regelmäßig genommen
+          oder gab es Pausen?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+        <p>
+          Wie viele Packungen haben Sie bisher
+          genommen?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+        <p>
+          Bestehen die Beschwerden schon länger
+          oder sind sie erst seit Kurzem da?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+        <p>
+          Wann haben Sie erwartet, erste
+          Ergebnisse zu spüren?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+        <p>
+          Ist Ihr Zustand jetzt genauso wie vor
+          dem Kurs oder doch etwas anders?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+        <p>
+          Wenn Sie es einschätzen: um wie viel
+          Prozent ist es besser geworden?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+        <p>
+          Gibt es aktuell noch „Schweregefühl“,
+          Druck im Bauch oder ein unangenehmes
+          Gefühl nach dem Essen?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+        <p>
+          Sind Sie in letzter Zeit häufiger
+          erkältet oder fühlen Sie sich insgesamt
+          anfälliger?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+        <p>
+          Wenn der Kurs beendet ist: hält der
+          Zustand oder kommt es wieder zurück?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+      </div>
+      <!-- Fragen zu  ARTIZYNT Caps -->
+      <div
+        id="ArtiZynt (Kapseln)"
+        class="content Fragen-zu-ArtiZynt w-full h-fit bg-fuchsia-100 flex-flow flex-col p-1 text-2xl font-normal hidden">
+        <h3>
+          Fragen zu ArtiZynt (Kapseln)
+          (Gesprächsbeginn)
+        </h3>
+
+        <p>
+          Sagen Sie, haben Sie während der
+          Einnahme schon Veränderungen bemerkt
+          oder eher noch nicht?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+        <p>
+          Was belastet Sie aktuell mehr: die
+          Schmerzen oder die eingeschränkte
+          Beweglichkeit?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+        <p>
+          Wann sind die Beschwerden am stärksten:
+          morgens, bei Belastung oder auch in
+          Ruhe?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+        <p>
+          Gibt es aktuell Schwellungen oder ein
+          Wärmegefühl im betroffenen Bereich?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+        <p>
+          Ist die Steifheit stärker geworden,
+          schwächer geworden oder unverändert?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+        <p>
+          Bei der Beweglichkeit: gibt es
+          Verbesserungen, keine Veränderung oder
+          eher Verschlechterung?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+        <p>
+          Gab es während der Einnahme wenigstens
+          kleine positive Veränderungen?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+        <p>
+          Haben Sie den Kurs regelmäßig genommen
+          oder gab es Pausen?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+        <p>
+          Wie viele Packungen haben Sie bisher
+          genommen?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+        <p>
+          Bestehen die Beschwerden schon länger
+          oder sind sie erst seit Kurzem da?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+        <p>
+          Wann haben Sie erwartet, erste
+          Ergebnisse zu spüren?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+        <p>
+          Ist Ihr Zustand jetzt genauso wie vor
+          dem Kurs oder doch etwas anders?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+        <p>
+          Wenn Sie es einschätzen: um wie viel
+          Prozent ist es besser geworden?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+        <p>
+          Gibt es aktuell Knirschen, Ziehen oder
+          Druckgefühl in den
+          Gelenken/Rückenbereichen?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+        <p>
+          Haben Sie Einschränkungen bei
+          Alltagssachen: Treppen, Aufstehen,
+          längeres Gehen?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+        <p>
+          Wenn der Kurs beendet ist: hält der
+          Zustand oder kommt es wieder zurück?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+      </div>
+
+      <!-- Fragen zu BIORITMIX K21 -->
+      <div
+        id="Bioritmix K21"
+        class="content Fragen-zu-Bioritmix w-full h-fit bg-fuchsia-100 flex-flow flex-col p-1 text-2xl font-normal hidden">
+        <h3>
+          Fragen zu BIORITMIX K21 (48 Stunden nach
+          Kauf – parallele Unterstützung)
+        </h3>
+
+        <p>
+          Haben Sie mit der Einnahme von (Name des
+          Hauptprodukts) bereits begonnen?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wie fühlen Sie sich bisher – eher
+          unverändert oder merken Sie schon erste
+          Reaktionen?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wie ist aktuell Ihr Energielevel im
+          Alltag – fühlen Sie sich eher müde oder
+          stabil?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wie reagiert Ihr Körper bisher – gibt es
+          Begleiterscheinungen wie Müdigkeit,
+          leichte Schwäche oder Veränderungen im
+          Wohlbefinden?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Unterstützen Sie Ihren Körper zusätzlich
+          mit Vitaminen oder Mineralstoffen?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wie wichtig ist es Ihnen, die Wirkung
+          des Hauptprodukts möglichst stabil und
+          nachhaltig zu unterstützen?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Achten Sie aktuell bewusst auf Ihr
+          Immunsystem und Ihre allgemeine
+          Belastbarkeit?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Haben Sie in letzter Zeit häufiger
+          Stress, Schlafprobleme oder
+          Konzentrationsschwierigkeiten bemerkt?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Ist es Ihnen wichtig, dass Ihr Körper
+          während des Kurses ausreichend versorgt
+          ist?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Würden Sie sagen, dass Sie Ihrem
+          Organismus aktuell zusätzliche
+          Unterstützung gönnen sollten?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+      </div>
+
+      <!-- Fragen zu CARDIOTENS PLUS -->
+      <div
+        id="Cardiotens PLUS"
+        class="content Fragen-zu-Cardiotens w-full h-fit bg-fuchsia-100 flex-flow flex-col p-1 text-2xl font-normal hidden">
+        <h3>
+          Fragen zu CARDIOTENS PLUS
+          (Gesprächsbeginn)
+        </h3>
+
+        <p>
+          Sagen Sie, haben Sie während der
+          Anwendung schon Veränderungen bemerkt
+          oder eher noch nicht?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Was belastet Sie aktuell mehr: der hohe
+          Blutdruck oder die Begleitsymptome wie
+          Kopfschmerzen und Schwindel?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wie hoch ist Ihr Blutdruck
+          normalerweise? Schwankt er stark?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Seit wann bestehen die
+          Blutdruckprobleme?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Haben Sie aktuell Symptome wie
+          Herzklopfen, Schwitzen oder Übelkeit?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Gibt es Phasen, in denen sich der Druck
+          stabiler anfühlt?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Gab es während der Anwendung wenigstens
+          kleine positive Veränderungen?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Haben Sie das Produkt regelmäßig
+          angewendet oder gab es Pausen?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wie viele Packungen haben Sie bisher
+          verwendet?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Treten die Beschwerden täglich auf oder
+          eher in bestimmten Situationen?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wann haben Sie erwartet, erste
+          Ergebnisse zu spüren?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Ist Ihr Zustand jetzt genauso wie vor
+          dem Kurs oder doch etwas anders?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wenn Sie es einschätzen: um wie viel
+          Prozent ist es besser geworden?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Gibt es aktuell Druckgefühl im Kopf,
+          Ohrensausen oder innere Unruhe?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Hat sich Ihr Schlaf oder Ihr allgemeines
+          Wohlbefinden verändert?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wenn der Kurs beendet ist: bleibt der
+          Druck stabil oder schwankt er wieder?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+      </div>
+
+      <!-- Fragen zu DIAFORM RX -->
+      <div
+        id="Diaform RX"
+        class="content Fragen-zu-Diaform w-full h-fit bg-fuchsia-100 flex-flow flex-col p-1 text-2xl font-normal hidden">
+        <h3>
+          Fragen zu DIAFORM RX (Gesprächsbeginn)
+        </h3>
+
+        <p>
+          Sagen Sie, haben Sie während der
+          Einnahme schon Veränderungen beim
+          Blutzucker bemerkt oder eher noch nicht?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Was belastet Sie aktuell mehr:
+          schwankende Zuckerwerte, Müdigkeit oder
+          andere Symptome?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wie stabil ist Ihr Blutzucker aktuell im
+          Alltag?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Gibt es starke Schwankungen im
+          Tagesverlauf?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Haben Sie häufiger Durst oder müssen
+          öfter zur Toilette?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Gibt es aktuell Müdigkeit, Schwäche oder
+          Energielosigkeit?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Haben Sie während der Einnahme
+          wenigstens kleine positive Veränderungen
+          bemerkt?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Haben Sie den Kurs regelmäßig genommen
+          oder gab es Pausen?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wie viele Packungen haben Sie bisher
+          genommen?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Bestehen die Zuckerprobleme schon länger
+          oder erst seit Kurzem?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wann haben Sie erwartet, erste
+          Ergebnisse zu spüren?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Ist Ihr Zustand jetzt genauso wie vor
+          dem Kurs oder doch etwas anders?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wenn Sie es einschätzen: um wie viel
+          Prozent ist es stabiler geworden?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Gibt es aktuell Druck, Kopfschmerzen
+          oder Schwindel durch den Blutzucker?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Hat sich Ihr Schlaf oder Energielevel
+          verändert?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wenn der Kurs beendet ist: bleibt der
+          Zustand stabil oder schwankt es wieder?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+      </div>
+
+      <!-- Fragen zu FLEXOSAMINE / ARTIZYNT -->
+      <div
+        id="Flexosamine / ArtiZynt Gel"
+        class="content Fragen-zu-Flexosamine w-full h-fit bg-fuchsia-100 flex-flow flex-col p-1 text-2xl font-normal hidden">
+        <h3>
+          Fragen zu FLEXOSAMINE / ARTIZYNT
+          (Gesprächsbeginn)
+        </h3>
+
+        <p>
+          Sagen Sie, haben Sie während der
+          Anwendung schon Veränderungen bemerkt
+          oder eher noch nicht?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Was belastet Sie aktuell mehr: die
+          Schmerzen selbst oder die eingeschränkte
+          Beweglichkeit?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Haben Sie das Gefühl, dass sich die
+          Beweglichkeit etwas verbessert hat?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Gibt es aktuell Steifheit in den
+          Gelenken, besonders morgens oder nach
+          Ruhephasen?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Haben sich Schwellungen oder
+          Entzündungen seit der Anwendung
+          verändert?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Spüren Sie Knirschen oder Reibung in den
+          Gelenken stärker, schwächer oder
+          unverändert?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Gab es während der Anwendung wenigstens
+          kleine positive Veränderungen?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Haben Sie das Gel regelmäßig angewendet
+          oder gab es Pausen?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wie lange haben Sie das Produkt bisher
+          angewendet?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Bestehen die Beschwerden schon länger
+          oder sind sie erst seit Kurzem da?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wann haben Sie erwartet, erste
+          Ergebnisse zu spüren?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Ist Ihr Zustand jetzt genauso wie vor
+          dem Kurs oder doch etwas anders?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wenn Sie es einschätzen: um wie viel
+          Prozent ist es besser geworden?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Gibt es aktuell Schmerzen bei Bewegung
+          oder auch in Ruhe?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Fühlen sich die Gelenke stabiler oder
+          unverändert an?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wenn der Kurs beendet ist: hält die
+          Verbesserung oder kommen die Beschwerden
+          zurück?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+      </div>
+
+      <!-- Fragen zu HYPOCARDIS / CARDIOTENS -->
+      <div
+        id="Hypocardis / Cardiotens"
+        class="content Fragen-zu-Hypocardis w-full h-fit bg-fuchsia-100 flex-flow flex-col p-1 text-2xl font-normal hidden">
+        <h3>
+          Fragen zu HYPOCARDIS / CARDIOTENS
+          (Gesprächsbeginn)
+        </h3>
+
+        <p>
+          Sagen Sie, haben Sie während der
+          Einnahme schon Veränderungen bemerkt
+          oder eher noch nicht?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Was belastet Sie aktuell mehr: der
+          Blutdruck selbst oder die
+          Begleitsymptome
+          (Kopfschmerzen/Schwindel/Herzklopfen)?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wie hoch ist Ihr Blutdruck
+          normalerweise? Und wie stark schwankt
+          er?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Seit wann haben Sie diese
+          Blutdruckprobleme?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Haben Sie aktuell Kopfschmerzen,
+          Schwindel oder Druck im Kopf?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Spüren Sie manchmal
+          Herzklopfen/Tachykardie oder Unruhe?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Gibt es Schwellungen oder „Wasser in den
+          Beinen“?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Gab es während der Einnahme wenigstens
+          kleine positive Veränderungen?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Haben Sie den Kurs regelmäßig genommen
+          oder gab es Pausen?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wie viele Packungen haben Sie bisher
+          genommen?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Bestehen die Beschwerden schon länger
+          oder sind sie erst seit Kurzem da?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wann haben Sie erwartet, erste
+          Ergebnisse zu spüren?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Ist Ihr Zustand jetzt genauso wie vor
+          dem Kurs oder doch etwas anders?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wenn Sie es einschätzen: um wie viel
+          Prozent ist es besser geworden?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Haben Sie aktuell noch starke
+          Schwankungen oder ist es etwas stabiler
+          geworden?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wie ist Ihr Schlaf im Moment: ruhiger
+          oder unverändert?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wenn der Kurs beendet ist: hält der
+          Zustand oder kommt es wieder zurück?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+      </div>
+
+      <!-- Fragen zu IDEAL FIT -->
+      <div
+        id="Ideal Fit"
+        class="content Fragen-zu-IdealFit w-full h-fit bg-fuchsia-100 flex-flow flex-col p-1 text-2xl font-normal hidden">
+        <h3>
+          Fragen zu IDEAL FIT (Gesprächsbeginn)
+        </h3>
+
+        <p>
+          Sagen Sie, haben Sie während der
+          Einnahme schon Veränderungen bemerkt
+          oder eher noch nicht?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Was belastet Sie aktuell mehr: das
+          Gewicht selbst oder Begleiterscheinungen
+          wie Müdigkeit, Heißhunger oder
+          Schweregefühl?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wie viele Kilo möchten Sie insgesamt
+          reduzieren?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Haben Sie schon erste Veränderungen beim
+          Appetit oder beim Essverhalten bemerkt?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Gibt es aktuell Heißhunger auf Süßes
+          oder Abend-Snacks?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Spüren Sie Veränderungen bei
+          Energielevel oder Bewegung?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Gab es während der Einnahme wenigstens
+          kleine positive Veränderungen?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Haben Sie den Kurs regelmäßig genommen
+          oder gab es Pausen?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wie viele Packungen haben Sie bisher
+          genommen?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Besteht das Gewichtsproblem schon länger
+          oder erst seit Kurzem?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wann haben Sie erwartet, erste
+          Ergebnisse zu spüren?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Ist Ihr Zustand jetzt genauso wie vor
+          dem Kurs oder doch etwas anders?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wenn Sie es einschätzen: um wie viel
+          Prozent ist es besser geworden?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Gibt es aktuell Veränderungen beim
+          Umfang oder beim Gewicht?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Haben sich Verdauung oder Wasserhaushalt
+          etwas verändert?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wenn der Kurs beendet ist: hält das
+          Ergebnis oder kommt das Gewicht zurück?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+      </div>
+
+      <!-- Fragen zu IDEAL FIT TURBO -->
+      <div
+        id="Ideal Fit Turbo"
+        class="content Fragen-zu-IdealFit w-full h-fit bg-fuchsia-100 flex-flow flex-col p-1 text-2xl font-normal hidden">
+        <h3>
+          Fragen zu IDEAL FIT (Gesprächsbeginn)
+        </h3>
+
+        <p>
+          Sagen Sie, haben Sie während der
+          Einnahme schon Veränderungen bemerkt
+          oder eher noch nicht?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Was belastet Sie aktuell mehr: das
+          Gewicht selbst oder Begleiterscheinungen
+          wie Müdigkeit, Heißhunger oder
+          Schweregefühl?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wie viele Kilo möchten Sie insgesamt
+          reduzieren?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Haben Sie schon erste Veränderungen beim
+          Appetit oder beim Essverhalten bemerkt?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Gibt es aktuell Heißhunger auf Süßes
+          oder Abend-Snacks?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Spüren Sie Veränderungen bei
+          Energielevel oder Bewegung?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Gab es während der Einnahme wenigstens
+          kleine positive Veränderungen?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Haben Sie den Kurs regelmäßig genommen
+          oder gab es Pausen?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wie viele Packungen haben Sie bisher
+          genommen?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Besteht das Gewichtsproblem schon länger
+          oder erst seit Kurzem?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wann haben Sie erwartet, erste
+          Ergebnisse zu spüren?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Ist Ihr Zustand jetzt genauso wie vor
+          dem Kurs oder doch etwas anders?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wenn Sie es einschätzen: um wie viel
+          Prozent ist es besser geworden?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Gibt es aktuell Veränderungen beim
+          Umfang oder beim Gewicht?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Haben sich Verdauung oder Wasserhaushalt
+          etwas verändert?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wenn der Kurs beendet ist: hält das
+          Ergebnis oder kommt das Gewicht zurück?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+      </div>
+
+      <!-- Fragen zu PROSTALIS -->
+      <div
+        id="Prostalis"
+        class="content Fragen-zu-Prostalis w-full h-fit bg-fuchsia-100 flex-flow flex-col p-1 text-2xl font-normal hidden">
+        <h3>
+          Fragen zu PROSTALIS (Gesprächsbeginn)
+        </h3>
+
+        <p>
+          Sagen Sie, haben Sie während der
+          Einnahme schon Veränderungen bemerkt
+          oder eher noch nicht?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Was belastet Sie aktuell mehr: das
+          Wasserlassen oder die Erektion?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wie oft stehen Sie nachts zur Toilette
+          auf?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Haben Sie das Gefühl, die Blase entleert
+          sich nicht vollständig?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Ist der Harnstrahl schwächer, stärker
+          oder unverändert?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Bei der Erektion: gibt es
+          Verbesserungen, keine Veränderung oder
+          eher Verschlechterung?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Gab es während der Einnahme wenigstens
+          kleine positive Veränderungen?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Haben Sie den Kurs regelmäßig genommen
+          oder gab es Pausen?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wie viele Packungen haben Sie bisher
+          genommen?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Bestehen die Beschwerden schon länger
+          oder sind sie erst seit Kurzem da?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wann haben Sie erwartet, erste
+          Ergebnisse zu spüren?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Ist Ihr Zustand jetzt genauso wie vor
+          dem Kurs oder doch etwas anders?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wenn Sie es einschätzen: um wie viel
+          Prozent ist es besser geworden?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Gibt es aktuell Druck, Schweregefühl
+          oder Beschwerden im
+          Unterbauch/Leistenbereich?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>Gibt es morgendliche Erektionen?</p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wenn der Kurs beendet ist: hält der
+          Zustand oder kommt es wieder zurück?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+      </div>
+
+      <!-- Fragen zu OPTIPILLS -->
+      <div
+        id="OptiPills"
+        class="content Fragen-zu-OptiPills w-full h-fit bg-fuchsia-100 flex-flow flex-col p-1 text-2xl font-normal hidden">
+        <h3>
+          Fragen zu OPTIPILLS (Gesprächsbeginn)
+        </h3>
+
+        <p>
+          Sagen Sie, haben Sie während der
+          Einnahme schon Veränderungen beim Sehen
+          bemerkt oder eher noch nicht?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Was belastet Sie aktuell mehr:
+          verschwommenes Sehen, Trockenheit oder
+          Schmerzen in den Augen?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Haben Sie weiterhin Probleme beim Sehen
+          in der Dämmerung oder nachts?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Treten noch Rötungen, Reizungen oder
+          Druckgefühl in den Augen auf?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Gibt es Kopfschmerzen oder schnelle
+          Ermüdung beim Lesen oder Arbeiten am
+          Bildschirm?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Haben Sie Lichtblitze, Punkte oder
+          Schlieren vor den Augen bemerkt?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Gab es während der Einnahme wenigstens
+          kleine positive Veränderungen?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Haben Sie den Kurs regelmäßig genommen
+          oder gab es Pausen?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wie viele Packungen haben Sie bisher
+          genommen?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Bestehen die Sehprobleme schon länger
+          oder sind sie erst seit Kurzem da?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wann haben Sie erwartet, erste
+          Ergebnisse zu spüren?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Ist Ihr Zustand jetzt genauso wie vor
+          dem Kurs oder doch etwas anders?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wenn Sie es einschätzen: um wie viel
+          Prozent hat sich Ihre Sehkraft
+          verbessert?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Gibt es aktuell noch Trockenheit,
+          Tränenfluss oder Juckreiz der Lider?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Hat sich Ihr Sehen in der Nähe oder in
+          der Ferne verändert?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wenn der Kurs beendet ist: bleibt das
+          Ergebnis stabil oder verschlechtert sich
+          das Sehen wieder?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+      </div>
+
+      <!-- Fragen zu SLIMJET -->
+      <div
+        id="SLIMJET"
+        class="content Fragen-zu-SlimJet w-full h-fit bg-fuchsia-100 flex-flow flex-col p-1 text-2xl font-normal hidden">
+        <h3>
+          Fragen zu SLIMJET (Gesprächsbeginn)
+        </h3>
+
+        <p>
+          Sagen Sie, haben Sie während der
+          Einnahme schon Veränderungen bemerkt
+          oder eher noch nicht?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Was belastet Sie aktuell mehr:
+          Appetit/Heißhunger oder das Gewicht
+          selbst?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Haben Sie eher Heißhunger auf Süßes oder
+          auf Kohlenhydrate allgemein?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Zu welchen Tageszeiten ist der Hunger am
+          stärksten: morgens, nachmittags oder
+          abends?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Gibt es aktuell „Snacks zwischendurch“
+          oder eher große Portionen bei den
+          Mahlzeiten?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Haben Sie in letzter Zeit starke
+          Schwankungen beim Energielevel oder
+          Stimmungsschwankungen bemerkt?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Gibt es während der Einnahme wenigstens
+          kleine positive Veränderungen (weniger
+          Heißhunger, schneller satt, weniger
+          Snacks)?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Haben Sie den Kurs regelmäßig genommen
+          oder gab es Pausen?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wie viele Packungen haben Sie bisher
+          genommen?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Besteht das Thema Gewicht schon länger
+          oder ist es erst seit Kurzem stärker
+          geworden?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wann haben Sie erwartet, erste
+          Ergebnisse zu spüren?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Ist Ihr Zustand jetzt genauso wie vor
+          dem Kurs oder doch etwas anders?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wenn Sie es einschätzen: um wie viel
+          Prozent ist es besser geworden?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Gibt es aktuell noch starke Gelüste am
+          Abend oder ist es schon ruhiger
+          geworden?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Haben Sie aktuell Bewegung/Sport im
+          Alltag oder ist es eher wenig?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wenn der Kurs beendet ist: hält der
+          Zustand oder kommt es wieder zurück?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+      </div>
+
+      <!-- Fragen zu VARICOLD -->
+      <div
+        id="Varicold"
+        class="content Fragen-zu-Varicold w-full h-fit bg-fuchsia-100 flex-flow flex-col p-1 text-2xl font-normal hidden">
+        <h3>
+          Fragen zu VARICOLD (Gesprächsbeginn)
+        </h3>
+
+        <p>
+          Sagen Sie, haben Sie während der
+          Anwendung schon Veränderungen bemerkt
+          oder eher noch nicht?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Was belastet Sie aktuell mehr:
+          Schwellungen/Schweregefühl oder
+          Schmerzen/Krämpfe?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Haben Sie eher abends schwere Beine oder
+          ist es auch morgens schon spürbar?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Gibt es aktuell Juckreiz oder Brennen an
+          den Beinen?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Haben Sie nächtliche Wadenkrämpfe? Wenn
+          ja: wie oft pro Woche ungefähr?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Sind die Venen sichtbar hervorgetreten
+          oder sind es eher
+          „Besenreiser“/Pigmentflecken?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Gibt es während der Anwendung wenigstens
+          kleine positive Veränderungen (weniger
+          Schwere, weniger Schwellung, weniger
+          Krämpfe)?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Haben Sie das Gel regelmäßig angewendet
+          oder gab es Pausen?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Seit wann bestehen die Beschwerden
+          ungefähr?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wie ist Ihr Alltag: viel Sitzen/Stehen
+          oder regelmäßige Bewegung?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Haben Sie erwartet, dass die Wirkung
+          sehr schnell kommt?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Ist Ihr Zustand jetzt genauso wie vorher
+          oder doch etwas anders?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wenn Sie es einschätzen: um wie viel
+          Prozent ist es besser geworden?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Gibt es aktuell noch starke Schwellungen
+          am Abend oder ist es schon ruhiger
+          geworden?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Gibt es Druck/Spannung in den Waden oder
+          eher im Knöchelbereich?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+
+        <p>
+          Wenn der Kurs beendet ist: hält der
+          Zustand oder kommt es wieder zurück?
+        </p>
+        <input
+          type="text"
+          class="border-2 border-black-700 rounded-md p-2 w-full bg-gray-100" />
+      </div>
+    </div>
+    <!--#endregion -->
+
+    <!--#region EinwändeBearbeiten -->
+    <div
+      class="EinwändeBearbeiten w-full h-fit bg-red-300 flex flex-flow flex-col">
+      <p class="text-2xl mx-auto font-normal">
+        Nachdem wir seine Antworten geschrieben
+        haben, können wir seine Logik verstehen
+        und dann die Einwände lösen.
+      </p>
+      <div
+        class="flex flex-flow flex-col gap-2 p-2">
+        <p class="text-2xl mx-auto font-normal">
+          Bitte auswähen Sie die Logik des Kundes
+          anhand seiner Antworten und lösen Sie
+          die Einwände, damit er den Kurs weiter
+          nimmt.
+        </p>
+        <!-- Dropdown-Menü für Logikauswahl -->
+        <div
+          class="LogikNamen w-full justify-between px-10 items-center flex flex-flow flex-row gap-2">
+          <select
+            id="menu-logik"
+            class="select select-bordered border-b-black bg-white w-[50%] text-2xl font-normal rounded-2xl">
+            <option disabled selected>
+              Namen des Logiks
+            </option>
+            <option
+              value="schnelle Reaktion ≠ stabiles Ergebnis">
+              schnelle Reaktion ≠ stabiles
+              Ergebnis
+            </option>
+            <option
+              value="Erwartung vs. Realität des Körpers">
+              Erwartung vs. Realität des Körpers
+            </option>
+            <option
+              value="erste Reaktion vielleicht unbemerkt">
+              erste Reaktion vielleicht unbemerkt
+            </option>
+            <option
+              value="Pausen + Erwartung auf schnellen Effekt">
+              Pausen + Erwartung auf schnellen
+              Effekt
+            </option>
+            <option
+              value="Beschwerden bestehen schon länger">
+              Beschwerden bestehen schon länger
+            </option>
+          </select>
+          <button
+            onclick="Bioritmix()"
+            class="btn w-[10%] mx-auto rounded-2xl bg-white font-bold">
+            Bioritmix-K8
+          </button>
+        </div>
+        <!--#LogikInhalt-->
+        <div class="w-full h-fit p-1">
+          <!--schnelle Reaktion ≠ stabiles Ergebnis-->
+          <div
+            id="schnelle Reaktion ≠ stabiles Ergebnis"
+            class="content-logik text-2xl mx-auto font-normal bg-[#F8F8F8] rounded-2xl p-2 hidden">
+            <h3>
+              Logik „schnelle Reaktion ≠ stabiles
+              Ergebnis“
+            </h3>
+
+            <p>
+              Eine schnelle Reaktion des Körpers
+              und ein stabiles Ergebnis sind zwei
+              verschiedene Dinge.
+            </p>
+            <p>
+              Manchmal können erste Veränderungen
+              schnell kommen, aber wenn die
+              Ursache über Jahre entstanden ist,
+              verschwindet sie nicht in Tagen.
+            </p>
+            <p>
+              Schnelle Verbesserungen gibt es,
+              aber ohne Fortsetzung sind sie
+              selten stabil.
+            </p>
+            <p>
+              Die ersten Empfindungen können
+              schnell auftreten, Stabilität
+              entsteht immer später.
+            </p>
+            <p>
+              Bei chronischen Beschwerden ist eine
+              schnelle Veränderung meist nur der
+              Start.
+            </p>
+            <p>
+              Der Körper kann schnell reagieren,
+              aber festigt sich immer über den
+              Kurs.
+            </p>
+            <p>
+              Wenn der schnelle Effekt ausbleibt,
+              bedeutet das nicht, dass nichts
+              passiert — sondern dass der Körper
+              langsamer reagiert.
+            </p>
+            <p>
+              Nicht jeder reagiert gleich schnell,
+              vor allem bei länger bestehenden
+              Beschwerden.
+            </p>
+            <p>
+              Wenn sich etwas über Zeit aufgebaut
+              hat, baut sich auch das Ergebnis
+              schrittweise auf.
+            </p>
+            <p>
+              Schnelle Versprechen beziehen sich
+              meist auf erste Empfindungen, nicht
+              auf ein vollständiges Ergebnis.
+            </p>
+
+            <h3>Übergang</h3>
+            <p>
+              — Jetzt geht es nicht darum, über
+              Zeit zu diskutieren, sondern den
+              Zustand stabil zu bekommen.
+            </p>
+            <br />
+            <h3>
+              Formulierungen, die nicht wie
+              „Verkauf“ klingen
+            </h3>
+
+            <p>
+              Ich widerspreche Ihnen nicht — ich
+              orientiere mich an Ihrer
+              tatsächlichen Entwicklung.
+            </p>
+            <p>
+              Nach Ihren Antworten sieht man, dass
+              ein Prozess läuft, aber noch nicht
+              abgeschlossen ist.
+            </p>
+            <p>
+              Unsere Aufgabe ist es, einen
+              stabilen Zustand zu erreichen.
+            </p>
+            <p>
+              Ich sage Ihnen das ehrlich anhand
+              Ihrer beschriebenen Situation.
+            </p>
+            <p>
+              Jetzt geht es nicht um Erwartungen,
+              sondern um das Ergebnis.
+            </p>
+            <p>
+              Wir können den Effekt, der schon
+              begonnen hat, weiter ausbauen.
+            </p>
+            <p>
+              Wichtig ist, nicht in der Mitte
+              aufzuhören.
+            </p>
+            <p>
+              Sie haben bereits begonnen — jetzt
+              geht es ums Fertigführen.
+            </p>
+            <p>
+              Es ist sinnvoller, das Begonnene zu
+              verstärken, als später neu zu
+              starten.
+            </p>
+            <br />
+            <h3>
+              Angebotsübergang — ein Block (klar,
+              ruhig, überzeugend)
+            </h3>
+
+            <p>
+              Ich spreche offen mit Ihnen.
+              Schnelle Erwartungen sind
+              verständlich, aber natürliche
+              Produkte funktionieren anders als
+              Medikamente. Sie wirken nicht abrupt
+              innerhalb von Stunden, sondern
+              schrittweise. Wenn Sie bereits
+              kleine Veränderungen spüren, zeigt
+              das, dass Ihr Körper reagiert. Nur
+              das Tempo ist individuell.
+            </p>
+
+            <p>
+              Ich verspreche Ihnen keine Wunder in
+              zwei Tagen — das wäre nicht ehrlich.
+              Aber nach dem, was Sie beschreiben,
+              steht der Prozess nicht still. Wenn
+              es erste Veränderungen gibt,
+              ignoriert man sie nicht, sondern
+              führt sie in der Regel bis zu einem
+              stabilen Ergebnis weiter. Genau
+              dafür sind solche Kurse gedacht.
+            </p>
+
+            <p>
+              Sie sind bereits unser Kunde und
+              haben den Kurs begonnen. Deshalb
+              haben Sie aktuell Zugriff auf eine
+              größere Treuerabatt-Aktion für die
+              Fortsetzung. Diese gilt genau für
+              Kunden, die schon gestartet sind und
+              den Prozess ohne unnötige Mehrkosten
+              sauber zu Ende führen möchten. Ich
+              kann Ihnen den Kurs zu dieser
+              reduzierten Kondition sichern.
+            </p>
+
+            <p>
+              Aus meiner Erfahrung mit diesem
+              Produkt: In Ihrer Situation ist es
+              sinnvoll, nicht auf halbem Weg
+              stehen zu bleiben, sondern ruhig
+              weiterzumachen und zu schauen, wie
+              der Körper bei durchgehender
+              Anwendung reagiert. So erreicht man
+              in der Regel ein stabiles Ergebnis
+              statt kurzfristiger Schwankungen.
+            </p>
+
+            <p>
+              Meine klare Empfehlung: Führen Sie
+              den Kurs jetzt mit dem Treuerabatt
+              fort und bringen Sie den Prozess in
+              einen stabilen Zustand. Ich kann
+              Ihnen den passenden Kurs mit der
+              aktuellen Vergünstigung direkt
+              reservieren.
+            </p>
+          </div>
+          <!--Erwartung vs. Realität des Körpers-->
+          <div
+            id="Erwartung vs. Realität des Körpers"
+            class="content-logik text-2xl mx-auto font-normal bg-[#F8F8F8] rounded-2xl p-2 hidden">
+            <h3>
+              Logik „Erwartung vs. Realität des
+              Körpers“
+            </h3>
+
+            <p>
+              Ich verstehe, dass Sie einen
+              schnellen Effekt erwartet haben.
+            </p>
+            <p>
+              Aber der Körper reagiert nicht auf
+              Versprechen, sondern auf
+              Regelmäßigkeit.
+            </p>
+            <p>
+              Nach Ihren Antworten zu urteilen,
+              bestehen die Beschwerden nicht erst
+              seit gestern — deshalb kann die
+              Reaktion langsamer sein.
+            </p>
+            <p>
+              Wenn alles in zwei Tagen
+              verschwinden würde, gäbe es keine
+              Kurse.
+            </p>
+            <p>
+              Schnelle Erwartungen sind normal,
+              aber der Körper arbeitet in seinem
+              Tempo.
+            </p>
+            <p>
+              Manche reagieren nach Tagen, andere
+              nach Wochen.
+            </p>
+            <p>
+              Bei länger bestehenden Beschwerden
+              braucht es eine Aufbauphase.
+            </p>
+            <p>
+              Ihr Fall klingt eher nach einer
+              schrittweisen als nach einer
+              sofortigen Reaktion.
+            </p>
+            <p>
+              Das bedeutet nicht, dass es nicht
+              wirkt — sondern dass es langsamer
+              verläuft.
+            </p>
+            <p>
+              Bei chronischen Beschwerden ist ein
+              schneller Effekt eher die Ausnahme.
+            </p>
+            <p>
+              Wichtig ist nicht das Versprechen,
+              sondern die tatsächliche
+              Entwicklung.
+            </p>
+
+            <h3>Übergang</h3>
+            <p>
+              — Deshalb orientieren wir uns besser
+              am Ergebnis als an der
+              Geschwindigkeit.
+            </p>
+            <br />
+            <h3>
+              Formulierungen, die nicht wie
+              „Verkauf“ klingen
+            </h3>
+
+            <p>
+              Ich widerspreche Ihnen nicht — ich
+              orientiere mich an Ihrer
+              tatsächlichen Entwicklung.
+            </p>
+            <p>
+              Nach Ihren Antworten sieht man, dass
+              ein Prozess läuft, aber noch nicht
+              abgeschlossen ist.
+            </p>
+            <p>
+              Unsere Aufgabe ist es, einen
+              stabilen Zustand zu erreichen.
+            </p>
+            <p>
+              Ich sage Ihnen das ehrlich anhand
+              Ihrer beschriebenen Situation.
+            </p>
+            <p>
+              Jetzt geht es nicht um Erwartungen,
+              sondern um das Ergebnis.
+            </p>
+            <p>
+              Wir können den Effekt, der schon
+              begonnen hat, weiter ausbauen.
+            </p>
+            <p>
+              Wichtig ist, nicht in der Mitte
+              aufzuhören.
+            </p>
+            <p>
+              Sie haben bereits begonnen — jetzt
+              geht es ums Fertigführen.
+            </p>
+            <p>
+              Es ist sinnvoller, das Begonnene zu
+              verstärken, als später neu zu
+              starten.
+            </p>
+
+            <br />
+
+            <h3>
+              Angebotsübergang — ein Block (klar,
+              ruhig, überzeugend)
+            </h3>
+
+            <p>
+              Ich spreche offen mit Ihnen.
+              Schnelle Erwartungen sind
+              verständlich, aber natürliche
+              Produkte funktionieren anders als
+              Medikamente. Sie wirken nicht abrupt
+              innerhalb von Stunden, sondern
+              schrittweise. Wenn Sie bereits
+              kleine Veränderungen spüren, zeigt
+              das, dass Ihr Körper reagiert. Nur
+              das Tempo ist individuell.
+            </p>
+
+            <p>
+              Ich verspreche Ihnen keine Wunder in
+              zwei Tagen — das wäre nicht ehrlich.
+              Aber nach dem, was Sie beschreiben,
+              steht der Prozess nicht still. Wenn
+              es erste Veränderungen gibt,
+              ignoriert man sie nicht, sondern
+              führt sie in der Regel bis zu einem
+              stabilen Ergebnis weiter. Genau
+              dafür sind solche Kurse gedacht.
+            </p>
+
+            <p>
+              Sie sind bereits unser Kunde und
+              haben den Kurs begonnen. Deshalb
+              haben Sie aktuell Zugriff auf eine
+              größere Treuerabatt-Aktion für die
+              Fortsetzung. Diese gilt genau für
+              Kunden, die schon gestartet sind und
+              den Prozess ohne unnötige Mehrkosten
+              sauber zu Ende führen möchten. Ich
+              kann Ihnen den Kurs zu dieser
+              reduzierten Kondition sichern.
+            </p>
+
+            <p>
+              Aus meiner Erfahrung mit diesem
+              Produkt: In Ihrer Situation ist es
+              sinnvoll, nicht auf halbem Weg
+              stehen zu bleiben, sondern ruhig
+              weiterzumachen und zu schauen, wie
+              der Körper bei durchgehender
+              Anwendung reagiert. So erreicht man
+              in der Regel ein stabiles Ergebnis
+              statt kurzfristiger Schwankungen.
+            </p>
+
+            <p>
+              Meine klare Empfehlung: Führen Sie
+              den Kurs jetzt mit dem Treuerabatt
+              fort und bringen Sie den Prozess in
+              einen stabilen Zustand. Ich kann
+              Ihnen den passenden Kurs mit der
+              aktuellen Vergünstigung direkt
+              reservieren.
+            </p>
+          </div>
+          <!--erste Reaktion vielleicht unbemerkt-->
+          <div
+            id="erste Reaktion vielleicht unbemerkt"
+            class="content-logik text-2xl mx-auto font-normal bg-[#F8F8F8] rounded-2xl p-2 hidden">
+            <h3>
+              Logik „erste Reaktion vielleicht
+              unbemerkt“
+            </h3>
+
+            <p>
+              Manchmal sind erste Veränderungen
+              kaum spürbar.
+            </p>
+            <p>
+              Der Prozess kann intern starten und
+              wird erst später deutlich.
+            </p>
+            <p>
+              Viele bemerken den Effekt erst in
+              der zweiten Phase.
+            </p>
+            <p>
+              Die erste Phase ist oft weniger
+              spürbar, setzt aber den Prozess in
+              Gang.
+            </p>
+            <p>
+              Es kann sein, dass Ihr Körper schon
+              reagiert hat, ohne dass es deutlich
+              auffällt.
+            </p>
+            <p>
+              Wenn es auch nur kleine
+              Veränderungen gibt, ist das bereits
+              eine Reaktion.
+            </p>
+            <p>
+              Manchmal stabilisiert sich erst die
+              Entzündung, danach wird es spürbar.
+            </p>
+            <p>
+              Wichtig ist nicht nur „gespürt oder
+              nicht“, sondern die Entwicklung
+              insgesamt.
+            </p>
+            <p>
+              Es kommt vor, dass Verbesserungen
+              beginnen, aber nicht direkt
+              wahrgenommen werden.
+            </p>
+            <p>
+              Entscheidend ist: gibt es wenigstens
+              kleine Veränderungen?
+            </p>
+
+            <h3>Übergang</h3>
+            <p>
+              — Wenn der Prozess schon gestartet
+              ist, macht es Sinn, ihn stabil zu
+              Ende zu führen.
+            </p>
+            <br />
+            <h3>
+              Formulierungen, die nicht wie
+              „Verkauf“ klingen
+            </h3>
+
+            <p>
+              Ich widerspreche Ihnen nicht — ich
+              orientiere mich an Ihrer
+              tatsächlichen Entwicklung.
+            </p>
+            <p>
+              Nach Ihren Antworten sieht man, dass
+              ein Prozess läuft, aber noch nicht
+              abgeschlossen ist.
+            </p>
+            <p>
+              Unsere Aufgabe ist es, einen
+              stabilen Zustand zu erreichen.
+            </p>
+            <p>
+              Ich sage Ihnen das ehrlich anhand
+              Ihrer beschriebenen Situation.
+            </p>
+            <p>
+              Jetzt geht es nicht um Erwartungen,
+              sondern um das Ergebnis.
+            </p>
+            <p>
+              Wir können den Effekt, der schon
+              begonnen hat, weiter ausbauen.
+            </p>
+            <p>
+              Wichtig ist, nicht in der Mitte
+              aufzuhören.
+            </p>
+            <p>
+              Sie haben bereits begonnen — jetzt
+              geht es ums Fertigführen.
+            </p>
+            <p>
+              Es ist sinnvoller, das Begonnene zu
+              verstärken, als später neu zu
+              starten.
+            </p>
+
+            <br />
+
+            <h3>
+              Angebotsübergang — ein Block (klar,
+              ruhig, überzeugend)
+            </h3>
+
+            <p>
+              Ich spreche offen mit Ihnen.
+              Schnelle Erwartungen sind
+              verständlich, aber natürliche
+              Produkte funktionieren anders als
+              Medikamente. Sie wirken nicht abrupt
+              innerhalb von Stunden, sondern
+              schrittweise. Wenn Sie bereits
+              kleine Veränderungen spüren, zeigt
+              das, dass Ihr Körper reagiert. Nur
+              das Tempo ist individuell.
+            </p>
+
+            <p>
+              Ich verspreche Ihnen keine Wunder in
+              zwei Tagen — das wäre nicht ehrlich.
+              Aber nach dem, was Sie beschreiben,
+              steht der Prozess nicht still. Wenn
+              es erste Veränderungen gibt,
+              ignoriert man sie nicht, sondern
+              führt sie in der Regel bis zu einem
+              stabilen Ergebnis weiter. Genau
+              dafür sind solche Kurse gedacht.
+            </p>
+
+            <p>
+              Sie sind bereits unser Kunde und
+              haben den Kurs begonnen. Deshalb
+              haben Sie aktuell Zugriff auf eine
+              größere Treuerabatt-Aktion für die
+              Fortsetzung. Diese gilt genau für
+              Kunden, die schon gestartet sind und
+              den Prozess ohne unnötige Mehrkosten
+              sauber zu Ende führen möchten. Ich
+              kann Ihnen den Kurs zu dieser
+              reduzierten Kondition sichern.
+            </p>
+
+            <p>
+              Aus meiner Erfahrung mit diesem
+              Produkt: In Ihrer Situation ist es
+              sinnvoll, nicht auf halbem Weg
+              stehen zu bleiben, sondern ruhig
+              weiterzumachen und zu schauen, wie
+              der Körper bei durchgehender
+              Anwendung reagiert. So erreicht man
+              in der Regel ein stabiles Ergebnis
+              statt kurzfristiger Schwankungen.
+            </p>
+
+            <p>
+              Meine klare Empfehlung: Führen Sie
+              den Kurs jetzt mit dem Treuerabatt
+              fort und bringen Sie den Prozess in
+              einen stabilen Zustand. Ich kann
+              Ihnen den passenden Kurs mit der
+              aktuellen Vergünstigung direkt
+              reservieren.
+            </p>
+          </div>
+          <!--Pausen + Erwartung auf schnellen Effekt-->
+          <div
+            id="Pausen + Erwartung auf schnellen Effekt"
+            class="content-logik text-2xl mx-auto font-normal bg-[#F8F8F8] rounded-2xl p-2 hidden">
+            <h3>
+              Logik „Pausen + Erwartung auf
+              schnellen Effekt“
+            </h3>
+
+            <p>
+              Wenn man einen schnellen Effekt
+              erwartet und er nicht sofort kommt,
+              brechen viele zu früh ab.
+            </p>
+            <p>
+              Dann entsteht der Eindruck, es hätte
+              nicht geholfen, obwohl der Kurs
+              einfach nicht zu Ende geführt wurde.
+            </p>
+            <p>
+              Wenn man am Anfang stoppt, kann sich
+              der Effekt nicht entfalten.
+            </p>
+            <p>
+              Natürliche Kurse reagieren stark auf
+              Regelmäßigkeit.
+            </p>
+            <p>
+              Pausen führen oft genau zu dem
+              Gefühl „es wirkt nicht“.
+            </p>
+            <p>
+              Der Körper reagiert, aber ohne
+              Fortsetzung bleibt es instabil.
+            </p>
+            <p>
+              Es geht weniger um einen schnellen
+              Start, sondern um Kontinuität.
+            </p>
+            <p>
+              Bei Unregelmäßigkeit ist die Wirkung
+              immer schwächer.
+            </p>
+            <p>
+              Viele warten auf einen schnellen
+              Effekt und hören zu früh auf.
+            </p>
+            <p>
+              Dann entsteht das Gefühl, es hätte
+              nichts gebracht.
+            </p>
+
+            <h3>Übergang</h3>
+            <p>
+              — Deshalb ist jetzt entscheidend,
+              den Prozess zu Ende zu führen.
+            </p>
+            <br />
+            <h3>
+              Formulierungen, die nicht wie
+              „Verkauf“ klingen
+            </h3>
+
+            <p>
+              Ich widerspreche Ihnen nicht — ich
+              orientiere mich an Ihrer
+              tatsächlichen Entwicklung.
+            </p>
+            <p>
+              Nach Ihren Antworten sieht man, dass
+              ein Prozess läuft, aber noch nicht
+              abgeschlossen ist.
+            </p>
+            <p>
+              Unsere Aufgabe ist es, einen
+              stabilen Zustand zu erreichen.
+            </p>
+            <p>
+              Ich sage Ihnen das ehrlich anhand
+              Ihrer beschriebenen Situation.
+            </p>
+            <p>
+              Jetzt geht es nicht um Erwartungen,
+              sondern um das Ergebnis.
+            </p>
+            <p>
+              Wir können den Effekt, der schon
+              begonnen hat, weiter ausbauen.
+            </p>
+            <p>
+              Wichtig ist, nicht in der Mitte
+              aufzuhören.
+            </p>
+            <p>
+              Sie haben bereits begonnen — jetzt
+              geht es ums Fertigführen.
+            </p>
+            <p>
+              Es ist sinnvoller, das Begonnene zu
+              verstärken, als später neu zu
+              starten.
+            </p>
+
+            <br />
+            <h3>
+              Angebotsübergang — ein Block (klar,
+              ruhig, überzeugend)
+            </h3>
+
+            <p>
+              Ich spreche offen mit Ihnen.
+              Schnelle Erwartungen sind
+              verständlich, aber natürliche
+              Produkte funktionieren anders als
+              Medikamente. Sie wirken nicht abrupt
+              innerhalb von Stunden, sondern
+              schrittweise. Wenn Sie bereits
+              kleine Veränderungen spüren, zeigt
+              das, dass Ihr Körper reagiert. Nur
+              das Tempo ist individuell.
+            </p>
+
+            <p>
+              Ich verspreche Ihnen keine Wunder in
+              zwei Tagen — das wäre nicht ehrlich.
+              Aber nach dem, was Sie beschreiben,
+              steht der Prozess nicht still. Wenn
+              es erste Veränderungen gibt,
+              ignoriert man sie nicht, sondern
+              führt sie in der Regel bis zu einem
+              stabilen Ergebnis weiter. Genau
+              dafür sind solche Kurse gedacht.
+            </p>
+
+            <p>
+              Sie sind bereits unser Kunde und
+              haben den Kurs begonnen. Deshalb
+              haben Sie aktuell Zugriff auf eine
+              größere Treuerabatt-Aktion für die
+              Fortsetzung. Diese gilt genau für
+              Kunden, die schon gestartet sind und
+              den Prozess ohne unnötige Mehrkosten
+              sauber zu Ende führen möchten. Ich
+              kann Ihnen den Kurs zu dieser
+              reduzierten Kondition sichern.
+            </p>
+
+            <p>
+              Aus meiner Erfahrung mit diesem
+              Produkt: In Ihrer Situation ist es
+              sinnvoll, nicht auf halbem Weg
+              stehen zu bleiben, sondern ruhig
+              weiterzumachen und zu schauen, wie
+              der Körper bei durchgehender
+              Anwendung reagiert. So erreicht man
+              in der Regel ein stabiles Ergebnis
+              statt kurzfristiger Schwankungen.
+            </p>
+
+            <p>
+              Meine klare Empfehlung: Führen Sie
+              den Kurs jetzt mit dem Treuerabatt
+              fort und bringen Sie den Prozess in
+              einen stabilen Zustand. Ich kann
+              Ihnen den passenden Kurs mit der
+              aktuellen Vergünstigung direkt
+              reservieren.
+            </p>
+          </div>
+          <!--Beschwerden bestehen schon länger-->
+          <div
+            id="Beschwerden bestehen schon länger"
+            class="content-logik text-2xl mx-auto font-normal bg-[#F8F8F8] rounded-2xl p-2 hidden">
+            <h3>
+              Logik „Beschwerden bestehen schon
+              länger“
+            </h3>
+
+            <p>
+              Wie lange bestehen die Beschwerden
+              schon? (Antwort abwarten)
+            </p>
+            <p>
+              Wenn die Beschwerden länger
+              bestehen, verschwinden sie nicht in
+              Tagen.
+            </p>
+            <p>
+              Je länger das Problem besteht, desto
+              langsamer reagiert der Körper.
+            </p>
+            <p>
+              Der Körper verändert sich nicht in
+              zwei Tagen, wenn Beschwerden schon
+              lange da sind.
+            </p>
+            <p>
+              Ein schneller Effekt tritt eher bei
+              leichten Fällen auf.
+            </p>
+            <p>
+              In Ihrem Fall sind die Beschwerden
+              schon gefestigt.
+            </p>
+            <p>
+              Deshalb kann die Reaktion
+              schrittweise sein.
+            </p>
+            <p>
+              Hier zählt vor allem die konsequente
+              Fortsetzung.
+            </p>
+            <p>
+              Das ist keine Anfangsphase mehr,
+              sondern ein Prozess.
+            </p>
+            <p>
+              Es geht nicht um „schnell“, sondern
+              um „stabil“.
+            </p>
+            <p>
+              Wichtig ist, den Prozess zu Ende zu
+              bringen.
+            </p>
+
+            <h3>Übergang</h3>
+            <p>
+              — Deshalb ist es sinnvoll, den Kurs
+              fortzuführen, um ein stabiles
+              Ergebnis zu erreichen.
+            </p>
+            <br />
+            <h3>
+              Formulierungen, die nicht wie
+              „Verkauf“ klingen
+            </h3>
+
+            <p>
+              Ich widerspreche Ihnen nicht — ich
+              orientiere mich an Ihrer
+              tatsächlichen Entwicklung.
+            </p>
+            <p>
+              Nach Ihren Antworten sieht man, dass
+              ein Prozess läuft, aber noch nicht
+              abgeschlossen ist.
+            </p>
+            <p>
+              Unsere Aufgabe ist es, einen
+              stabilen Zustand zu erreichen.
+            </p>
+            <p>
+              Ich sage Ihnen das ehrlich anhand
+              Ihrer beschriebenen Situation.
+            </p>
+            <p>
+              Jetzt geht es nicht um Erwartungen,
+              sondern um das Ergebnis.
+            </p>
+            <p>
+              Wir können den Effekt, der schon
+              begonnen hat, weiter ausbauen.
+            </p>
+            <p>
+              Wichtig ist, nicht in der Mitte
+              aufzuhören.
+            </p>
+            <p>
+              Sie haben bereits begonnen — jetzt
+              geht es ums Fertigführen.
+            </p>
+            <p>
+              Es ist sinnvoller, das Begonnene zu
+              verstärken, als später neu zu
+              starten.
+            </p>
+
+            <br />
+
+            <h3>
+              Angebotsübergang — ein Block (klar,
+              ruhig, überzeugend)
+            </h3>
+
+            <p>
+              Ich spreche offen mit Ihnen.
+              Schnelle Erwartungen sind
+              verständlich, aber natürliche
+              Produkte funktionieren anders als
+              Medikamente. Sie wirken nicht abrupt
+              innerhalb von Stunden, sondern
+              schrittweise. Wenn Sie bereits
+              kleine Veränderungen spüren, zeigt
+              das, dass Ihr Körper reagiert. Nur
+              das Tempo ist individuell.
+            </p>
+
+            <p>
+              Ich verspreche Ihnen keine Wunder in
+              zwei Tagen — das wäre nicht ehrlich.
+              Aber nach dem, was Sie beschreiben,
+              steht der Prozess nicht still. Wenn
+              es erste Veränderungen gibt,
+              ignoriert man sie nicht, sondern
+              führt sie in der Regel bis zu einem
+              stabilen Ergebnis weiter. Genau
+              dafür sind solche Kurse gedacht.
+            </p>
+
+            <p>
+              Sie sind bereits unser Kunde und
+              haben den Kurs begonnen. Deshalb
+              haben Sie aktuell Zugriff auf eine
+              größere Treuerabatt-Aktion für die
+              Fortsetzung. Diese gilt genau für
+              Kunden, die schon gestartet sind und
+              den Prozess ohne unnötige Mehrkosten
+              sauber zu Ende führen möchten. Ich
+              kann Ihnen den Kurs zu dieser
+              reduzierten Kondition sichern.
+            </p>
+
+            <p>
+              Aus meiner Erfahrung mit diesem
+              Produkt: In Ihrer Situation ist es
+              sinnvoll, nicht auf halbem Weg
+              stehen zu bleiben, sondern ruhig
+              weiterzumachen und zu schauen, wie
+              der Körper bei durchgehender
+              Anwendung reagiert. So erreicht man
+              in der Regel ein stabiles Ergebnis
+              statt kurzfristiger Schwankungen.
+            </p>
+
+            <p>
+              Meine klare Empfehlung: Führen Sie
+              den Kurs jetzt mit dem Treuerabatt
+              fort und bringen Sie den Prozess in
+              einen stabilen Zustand. Ich kann
+              Ihnen den passenden Kurs mit der
+              aktuellen Vergünstigung direkt
+              reservieren.
+            </p>
+          </div>
+          <!--Bioritmix-->
+          <div
+            id="Bioritmix"
+            class="content-logik hidden text-2xl mx-auto font-normal bg-[#F8F8F8] rounded-2xl p-2">
+            <h3>
+              Block: Warum parallele Unterstützung
+              sinnvoll ist
+            </h3>
+
+            <h3>
+              1. Logik „Hauptprodukt wirkt gezielt
+              – Vitamine stabilisieren den
+              Gesamtzustand“
+            </h3>
+            <p>
+              Ein gezielt wirkendes Produkt
+              unterstützt einen bestimmten
+              Bereich.
+            </p>
+            <p>
+              Damit der Körper optimal reagieren
+              kann, braucht er jedoch ausreichende
+              Nährstoffe.
+            </p>
+            <p>
+              Wenn der Organismus belastet ist,
+              reagiert er oft langsamer.
+            </p>
+            <p>
+              Vitamine und Antioxidantien helfen,
+              die körpereigenen Prozesse stabil zu
+              halten.
+            </p>
+            <p>
+              Eine gute Mikrozirkulation
+              unterstützt die Versorgung der
+              Zellen.
+            </p>
+            <p>
+              Ohne Basisversorgung kann ein
+              Prozess instabil bleiben.
+            </p>
+            <p>
+              Deshalb ergänzt ein Vitamin-Komplex
+              gezielte Produkte sinnvoll.
+            </p>
+
+            <h3>Übergang</h3>
+            <p>
+              — Es geht nicht um „mehr Produkte“,
+              sondern um bessere Unterstützung des
+              Körpers während des Kurses.
+            </p>
+
+            <h3>
+              2. Logik „Immunsystem + Regeneration
+              während des Kurses“
+            </h3>
+            <p>
+              Wenn der Körper arbeitet, braucht er
+              Unterstützung.
+            </p>
+            <p>
+              Antioxidantien schützen Zellen vor
+              oxidativem Stress.
+            </p>
+            <p>
+              Adaptogene wie Cordyceps
+              unterstützen die Belastbarkeit.
+            </p>
+            <p>
+              Kollagen unterstützt Gewebe, Haut
+              und Gelenke.
+            </p>
+            <p>
+              Eine stabile Mikrozirkulation
+              verbessert die Versorgung der
+              Organe.
+            </p>
+            <p>
+              Je besser der Körper versorgt ist,
+              desto ruhiger und gleichmäßiger
+              verläuft der Prozess.
+            </p>
+
+            <h3>Übergang</h3>
+            <p>
+              — Deshalb empfehlen wir Bioritmix
+              nicht statt, sondern begleitend zum
+              Hauptprodukt.
+            </p>
+
+            <h3>
+              3. Logik „Frühe Stabilisierung statt
+              spätere Korrektur“
+            </h3>
+            <p>
+              Viele denken erst später an
+              Unterstützung.
+            </p>
+            <p>
+              Wenn man von Anfang an stabilisiert,
+              verläuft der Prozess ruhiger.
+            </p>
+            <p>
+              Eine gleichmäßige Versorgung
+              reduziert unnötige Belastung.
+            </p>
+            <p>
+              Der Körper reagiert ausgeglichener,
+              wenn Mikronährstoffe ausreichend
+              vorhanden sind.
+            </p>
+            <p>
+              Es ist sinnvoller, parallel zu
+              unterstützen, als später
+              nachzujustieren.
+            </p>
+
+            <h3>Übergang</h3>
+            <p>
+              — Genau dafür wurde Bioritmix als
+              Ergänzung entwickelt.
+            </p>
+
+            <h3>
+              Formulierungen, die nicht wie
+              „Verkauf“ klingen
+            </h3>
+            <p>
+              Ich informiere Sie, damit Sie
+              bewusst entscheiden können.
+            </p>
+            <p>
+              Es geht nicht um zusätzliches
+              Kaufen, sondern um Unterstützung des
+              laufenden Prozesses.
+            </p>
+            <p>
+              Wenn der Körper ausreichend versorgt
+              ist, reagiert er stabiler.
+            </p>
+            <p>
+              Ich empfehle es nicht pauschal,
+              sondern im Zusammenhang mit Ihrem
+              aktuellen Kurs.
+            </p>
+            <p>
+              Sie haben bereits begonnen – jetzt
+              können Sie den Prozess optimal
+              begleiten.
+            </p>
+
+            <h3>
+              Angebotsübergang — ein Block (ruhig,
+              unterstützend)
+            </h3>
+            <p>Ich spreche offen mit Ihnen.</p>
+            <p>
+              Bioritmix ist kein Ersatz für Ihr
+              Hauptprodukt.
+            </p>
+            <p>
+              Es ist eine Ergänzung, die den
+              Körper während des laufenden Kurses
+              unterstützt.
+            </p>
+            <p>
+              Antioxidantien, Adaptogene, Kollagen
+              und Mikronährstoffe tragen dazu bei,
+              Energie, Immunsystem und
+              Regeneration zu stabilisieren.
+            </p>
+            <p>
+              Gerade in den ersten Wochen ist es
+              sinnvoll, den Organismus nicht nur
+              gezielt, sondern ganzheitlich zu
+              unterstützen.
+            </p>
+            <p>
+              Der reguläre Preis für einen
+              1-Monats-Kurs Bioritmix beträgt 79
+              Euro.
+            </p>
+            <p>
+              Heute können Sie ihn im Rahmen Ihrer
+              bestehenden Bestellung für 59 Euro
+              (2 Packungen) oder 68 Euro (3
+              Packungen) erhalten.
+            </p>
+            <p>
+              Welche Menge möchten Sie ergänzend
+              aufnehmen – 2 oder 3 Packungen?
+            </p>
+          </div>
+        </div>
+        <!--#LogikInhaltEnde-->
+      </div>
+    </div>
+    <!--#endregion -->
+    <!--#region Lieferung-->
+    <div
+      class="Lieferung w-full h-fit bg-red-300 flex flex-flow flex-col p-1">
+      <p class="text-2xl font-normal text-center mb-1">
+        Falls die Kunde eine Produkt bestellt ,
+        sollten wir erst die Addresse schreiben
+        und dann die Lieferprotokolle erklären.
+      </p>
+      <div
+        class="text-2xl mx-auto font-normal bg-[#F8F8F8] rounded-2xl p-2">
+        <p>
+          1. Adresse aufnehmen: Bitte teilen Sie
+          mir Ihre Lieferadresse mit, damit wir
+          die Bestellung korrekt zuordnen und
+          versenden können.
+        </p>
+        <p>
+          2. Lieferprotokoll erklären: Sobald die
+          Bestellung versendet wurde, erhalten Sie
+          eine Versandbestätigung mit einer
+          Sendungsverfolgungsnummer. Damit können
+          Sie jederzeit den Status Ihrer Lieferung
+          verfolgen.
+        </p>
+        <p>
+          3. Wann möchten Sie die Packung
+          erhalten?
+        </p>
+        <p>
+          4.Liefeerzeit: Sie bekomme die Packung
+          in 3-4 Werktagen nach der Bestellung.
+          <br />
+          Zustellzeiten: Montag bis Freitag von
+          8:00 bis 18:00 Uhr.
+        </p>
+        <p>
+          5.Kuriere geben kein Wechselgeld. Der
+          Empfänger muss den genauen Betrag
+          bereithalten.
+        </p>
+      </div>
+    </div>
+    <!--#endregion -->
+    <!--#region Zusammenfassung-->
+    <div
+      class="Zusammenfassung w-full h-fit bg-red-300 flex flex-flow flex-col p-0.5">
+      <p class="text-2xl font-normal text-center mb-1">
+        Am Ende des Gesprächs sollten wir eine
+        kurze Zusammenfassung machen, um die
+        wichtigsten Punkte zu wiederholen und die
+        nächsten Schritte klar zu kommunizieren.
+      </p>
+      <div
+        class="text-2xl font-normal bg-[#F8F8F8] rounded-2xl p-0.5">
+        <p>
+          1. Vorname und Nachname des Kunden: Wiederholen
+        </p>
+        <p>
+          2. Bestellte Produkte: Wiederholen Sie die von dem Kunden bestellten Produkte.
+        </p>
+        <p>
+          3. Mangen von Produkten: Bestätigen Sie die Anzahl der bestellten Produkte. 
+        </p>
+        <p>
+          4. Gesamtbetrag: Bestätigen Sie den insgesamt zu zahlenden Betrag.
+        </p>
+        <p>
+          5.lieferadresse: Bestätigen Sie die Lieferadresse, die der Kunde angegeben hat.
+        </p>
+        <p>
+          6.lieferzeit: Bestätigen Sie die voraussichtliche Lieferzeit, z.B. 3-4 Werktage nach der Bestellung.
+        </p>
+        <div class="bg-orange-100 w-[50%] mx-auto rounded-2xl p-2">
+          <p>Lieferzeit: 2–5 Werktage</p>
+          <p>Zahlung beim Kurier:</p>
+          <p>Nur bar (ohne Wechselgeld)</p>
+          <p>Am Tag des versands kriegen sie eine sms</p>
+          <p>sie mussen erreichbar sein</p>
+          <p>— Zahlung erfolgt bei Zustellung   U.S.W.....</p>
+        </div>
+       
+      </div>
+    <!--#endregion -->
+    <!--#region Einverständniserklärung-->
+    <div
+      class="Einverständniserklärung w-full h-fit bg-red-300 flex flex-flow flex-col p-0.5">
+        <p class="text-2xl font-normal text-center mb-1">
+        Am Ende des Gesprächs Einverständniserklärung - Wort für Wort
+      </p>
+      <div class="text-2xl font-normal bg-[#F8F8F8] rounded-2xl p-0.5">
+         <div class="bg-orange-100 w-[50%] mx-auto rounded-2xl p-2">
+          <p>**„Wir schicken Ihre Bestellung an die angegebene Adresse.</p>
+          <p>Die Lieferung kommt in etwa 3-5 Werktagen per Kurier.</p>
+          <p>Bitte sorgen Sie dafür, dass Sie erreichbar sind und das Paket </p>
+          <p>annehmen können.</p>
+          <p>Mit der Bestätigung der Bestellung erklären Sie sich damit </p>
+          <p>einverstanden, das Paket anzunehmen und bei der Zustellung zu </p>
+          <p>bezahlen.</p>
+          <p>Passt das so?“**</p>
+        </div>
+      </div>
+        
+    </div>
+    <!--#endregion -->
+    <script src="src/js/Fragen.js"></script>
+  </body>
+</html>
