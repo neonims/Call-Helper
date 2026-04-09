@@ -23,11 +23,11 @@
     <div class="Funnels flex flex-flow flex-col w-full h-fit justify-center items-center">
       <h1 class="text-2xl">Funnels</h1>
       <div class="Funnels-Names flex flex-flow flex-row w-full h-fit p-1 justify-between items-center gap-2">
-        <button class="w-[20%] rounded-2xl border-b-blue-700 bg-amber-300">K21</button>
-        <button class="w-[20%] rounded-2xl border-b-blue-700 bg-amber-300">K8</button>
-        <button class="w-[20%] rounded-2xl border-b-blue-700 bg-amber-300">K22</button>
-        <button class="w-[20%] rounded-2xl border-b-blue-700 bg-amber-300">K7</button>
-        <button class="w-[20%] rounded-2xl border-b-blue-700 bg-amber-300">K24</button>
+        <button  onclick="K21()" class="w-[20%] rounded-2xl border-b-blue-700 bg-amber-300">K21</button>
+        <button onclick="Andere()" class="w-[20%] rounded-2xl border-b-blue-700 bg-amber-300">K8</button>
+        <button onclick="Andere()" class="w-[20%] rounded-2xl border-b-blue-700 bg-amber-300">K22</button>
+        <button onclick="Andere()" class="w-[20%] rounded-2xl border-b-blue-700 bg-amber-300">K7</button>
+        <button onclick="Andere()" class="w-[20%] rounded-2xl border-b-blue-700 bg-amber-300">K24</button>
       </div>
     </div>
     <!--#endregion -->
@@ -3039,6 +3039,17 @@
         </div>
         <!--#LogikInhaltEnde-->
       </div>
+    </div>
+    <!--#endregion -->
+    <!--#region Funnels-Angebot-->
+    <div class="Funnels-Angebot w-full h-fit bg-red-300 flex flex-flow flex-col justify-center items-center gap-1 p-1">
+       <div class="FunnelK21 m-1.5 bg-blue-200 hidden flex-flow flex-col p-1 rounded-2xl text-2xl font-normal">
+        
+        <p class="p-2">Wir haben heute ein besonderes Angebot und einen wunderbaren Rabatt für Sie, weil Sie gerade bei uns eingekauft haben und wir Sie als zufriedenen Kunden behalten möchten.</p>
+       </div>
+       <div class="Funnel-Andere m-1.5 bg-blue-200 flex-flow flex-col p-1 rounded-2xl text-2xl font-normal hidden">
+        <p class="p-2">Wir haben heute ein besonderes Angebot und einen Rabatt für Sie, weil Sie bereits bei uns eingekauft haben und wir Sie gerne wieder als zufriedenen Kunden begrüßen möchten.</p>
+       </div>
     </div>
     <!--#endregion -->
     <!--#region Lieferung-->

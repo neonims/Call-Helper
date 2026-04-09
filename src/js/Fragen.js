@@ -36,8 +36,29 @@ function Bioritmix() {
       el.style.display = "none";
     });
 
-    const selected = document.getElementById(
-      "Bioritmix",
+  const selected =
+    document.getElementById("Bioritmix");
+  if (selected) selected.style.display = "block";
+}
+
+function K21() {
+  const selected =
+    document.getElementsByClassName("FunnelK21");
+  selected[0].style.display = "flex";
+  const andere = document.getElementsByClassName(
+    "Funnel-Andere",
+  );
+  andere[0].style.display = "none";
+}
+
+function Andere() {
+  const selected =
+    document.getElementsByClassName(
+      "Funnel-Andere",
     );
-    if (selected) selected.style.display = "block";
+  if (selected.length)
+    selected[0].style.display = "flex";
+  const andere =
+    document.getElementsByClassName("FunnelK21");
+  andere[0].style.display = "none";
 }
