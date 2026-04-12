@@ -23,11 +23,11 @@
     <div class="Funnels flex flex-flow flex-col w-full h-fit justify-center items-center">
       <h1 class="text-2xl">Funnels</h1>
       <div class="Funnels-Names flex flex-flow flex-row w-full h-fit p-1 justify-between items-center gap-2">
-        <button  onclick="K21()" class="w-[20%] rounded-2xl border-b-blue-700 bg-amber-300">K21</button>
-        <button onclick="Andere()" class="w-[20%] rounded-2xl border-b-blue-700 bg-amber-300">K8</button>
-        <button onclick="Andere()" class="w-[20%] rounded-2xl border-b-blue-700 bg-amber-300">K22</button>
-        <button onclick="Andere()" class="w-[20%] rounded-2xl border-b-blue-700 bg-amber-300">K7</button>
-        <button onclick="Andere()" class="w-[20%] rounded-2xl border-b-blue-700 bg-amber-300">K24</button>
+      <label class="w-[45%] bg-amber-400 rounded-2xl text-2xl font-black flex"  for="">
+        <input class="w-[50%]" type="radio" name="funnel" value="K21"> K21
+      </label>
+      <label class="flex justify-center rounded-2xl w-[45%] bg-amber-400 text-2xl font-black" for="">
+        <input class="w-[50%]" type="radio" name="funnel" value="Andere"> Andere
       </div>
     </div>
     <!--#endregion -->
@@ -46,7 +46,7 @@
             von Fenixcallcenter an.Ich hoffe ,dass
             es Ihnen gut geht. Sie haben bei uns
           </p>
-          <!-- Dropdown-Menü für Produktauswahl -->
+    <!--#region Produktauswahl -->
           <div
             class="ProduktNamen w-[20%] mx-0.5">
             <select
@@ -61,8 +61,8 @@
               <option value="ArtiZynt (Kapseln)">
                 ArtiZynt (Kapseln)
               </option>
-              <option value="Bioritmix K21">
-                Bioritmix K21
+              <option value="Cardiotens PLUS">
+                Cardioviva
               </option>
               <option value="Cardiotens PLUS">
                 Cardiotens PLUS
@@ -70,9 +70,16 @@
               <option value="Diaform RX">
                 Diaform RX
               </option>
+               <option value="Ideal Fit Turbo">
+                Glucosol
+              </option>
               <option
                 value="Flexosamine / ArtiZynt Gel">
                 Flexosamine / ArtiZynt Gel
+              </option>
+                <option
+                value="Orosteel">
+                Orosteel
               </option>
               <option
                 value="Hypocardis / Cardiotens">
@@ -98,6 +105,7 @@
               </option>
             </select>
           </div>
+          <!--# endregion -->
         </div>
 
         <p class="text-2xl mx-auto font-normal">
@@ -1907,6 +1915,20 @@
     </div>
     <!--#endregion -->
 
+
+    <!--#region Funnels-Angebot-->
+    <div class="Funnels-Angebot w-full h-fit bg-red-300 flex flex-flow flex-col justify-center items-center gap-1 p-1">
+       <div id="Angebot01" class="hidden m-1.5 bg-blue-200 flex-flow flex-col p-1 rounded-2xl text-2xl font-normal">
+        
+        <p class="p-2">Wir haben heute ein besonderes Angebot und einen wunderbaren Rabatt für Sie, weil Sie gerade bei uns eingekauft haben und wir Sie als zufriedenen Kunden behalten möchten.</p>
+       </div>
+       <div id="Angebot02" class=" m-1.5 bg-blue-200 flex-flow flex-col p-1 rounded-2xl text-2xl font-normal hidden">
+        <p class="p-2">Wir haben heute ein besonderes Angebot und einen Rabatt für Sie, weil Sie bereits bei uns eingekauft haben und wir Sie gerne wieder als zufriedenen Kunden begrüßen möchten.</p>
+       </div>
+    </div>
+    <!--#endregion -->
+
+
     <!--#region EinwändeBearbeiten -->
     <div
       class="EinwändeBearbeiten w-full h-fit bg-red-300 flex flex-flow flex-col">
@@ -1955,11 +1977,6 @@
               Beschwerden bestehen schon länger
             </option>
           </select>
-          <button
-            onclick="Bioritmix()"
-            class="btn w-[10%] mx-auto rounded-2xl bg-white font-bold">
-            Bioritmix-K21 
-          </button>
         </div>
         <!--#LogikInhalt-->
         <div class="w-full h-fit p-1">
@@ -2845,6 +2862,87 @@
           <div
             id="Bioritmix"
             class="content-logik hidden text-2xl mx-auto font-normal bg-[#F8F8F8] rounded-2xl p-2">
+            <div id="gewicht" class="hidden flex-flow flex-col bg-green-300 p-2 rounded-2xl">  
+                  <h1 class="mx-auto">Gewichtsabnahme</h1>
+                   <h2>1. Grundprinzip</h2>
+    <p>
+        Die Tropfen stoßen die Gewichtsabnahme an, zum Beispiel durch Unterstützung von Appetit und Stoffwechsel.
+        Die Inhaltsstoffe helfen dem Körper, stabil zu bleiben und richtig zu reagieren.
+    </p>
+
+    <h2>2. Kürbiskernextrakt</h2>
+    <p>
+        Enthält wichtige Vitamine und Mineralstoffe wie Zink, Magnesium und Kalium.
+        Unterstützt den Stoffwechsel und die Hormonbalance im Körper.
+    </p>
+
+    <h2>3. Grüntee-Extrakt</h2>
+    <p>
+        Wird traditionell verwendet, um den Stoffwechsel auf natürliche Weise zu unterstützen
+        und kann die Fettverbrennung leicht anregen.
+    </p>
+
+    <h2>4. Cordyceps-Extrakt</h2>
+    <p>
+        Bekannt aus der traditionellen Anwendung zur Unterstützung von Energie und Ausdauer.
+        Hilft dem Körper, aktiver zu bleiben.
+    </p>
+
+    <h2>5. Kollagen</h2>
+    <p>
+        Unterstützt Haut, Muskeln und Gewebe.
+        Besonders wichtig während der Gewichtsabnahme, wenn sich der Körper verändert.
+    </p>
+
+    <h2>6. Quercetin</h2>
+    <p>
+        Ein Antioxidans, das den Zellschutz unterstützt und hilft,
+        den Körper im Gleichgewicht zu halten.
+    </p>
+
+    <h2>3. Alles zusammenführen (Verkaufsargument)</h2>
+<p>
+„Die Tropfen setzen gezielt bei der Gewichtsabnahme an – zum Beispiel beim Appetit oder Stoffwechsel.
+Die enthaltenen Inhaltsstoffe wie Grüntee, Vitamine und Pflanzenextrakte unterstützen gleichzeitig Ihren Körper,
+damit er stabil bleibt und richtig reagieren kann.
+So haben Sie nicht nur kurzfristige Effekte, sondern eine nachhaltigere Unterstützung.“
+</p>
+
+<h2>4. Stärkerer, aber seriöser Satz</h2>
+<p>
+„Viele machen den Fehler, nur auf die Fettverbrennung zu schauen.
+Aber der Körper muss dabei mitkommen – genau deshalb sind diese unterstützenden Inhaltsstoffe enthalten.“
+</p>
+
+<h2>5. Skeptische Kunden abholen</h2>
+<p>
+„Ich verstehe Sie – es geht nicht darum, dass ein Inhaltsstoff alleine Gewicht reduziert.
+Es geht darum, dass alles zusammen Ihren Körper unterstützt,
+damit die Gewichtsabnahme besser funktioniert.“
+</p>
+              
+          
+            </div>
+
+            <div id="gelenke" class="hidden flex-flow flex-col bg-green-300 p-2 rounded-2xl">
+              <h2 class="mx-auto">Gelenke</h2>
+
+<p>Ich erkläre Ihnen kurz, wie das Produkt zusammengesetzt ist.</p>
+
+<p>Es enthält verschiedene Inhaltsstoffe, die den Körper allgemein im Bereich Muskeln, Gelenke und Stoffwechsel unterstützen können.</p>
+
+<p>Kollagen ist dabei ein wichtiger Baustein für Knorpel und Bindegewebe, also Strukturen, die für Beweglichkeit und Stabilität eine Rolle spielen.</p>
+
+<p>Dazu kommen Mineralstoffe wie Magnesium und Zink, die normalerweise an der normalen Muskelfunktion und dem Zellstoffwechsel beteiligt sind.</p>
+
+<p>Pflanzliche Bestandteile wie Grüntee-Extrakt und Quercetin werden häufig wegen ihrer antioxidativen Eigenschaften eingesetzt, also im Zusammenhang mit dem Schutz der Zellen vor Belastungen.</p>
+
+<p>Cordyceps ist ein traditionell verwendeter Extrakt, der allgemein mit Energie und körperlicher Belastbarkeit in Verbindung gebracht wird.</p>
+
+<p><strong>Wichtig ist:</strong> Es handelt sich um eine ernährungsphysiologische Unterstützung des Körpers mit Nährstoffen – nicht um ein Arzneimittel.</p>
+            </div>
+          
+
             <h3>
               Block: Warum parallele Unterstützung
               sinnvoll ist
@@ -3041,17 +3139,7 @@
       </div>
     </div>
     <!--#endregion -->
-    <!--#region Funnels-Angebot-->
-    <div class="Funnels-Angebot w-full h-fit bg-red-300 flex flex-flow flex-col justify-center items-center gap-1 p-1">
-       <div class="FunnelK21 m-1.5 bg-blue-200 hidden flex-flow flex-col p-1 rounded-2xl text-2xl font-normal">
-        
-        <p class="p-2">Wir haben heute ein besonderes Angebot und einen wunderbaren Rabatt für Sie, weil Sie gerade bei uns eingekauft haben und wir Sie als zufriedenen Kunden behalten möchten.</p>
-       </div>
-       <div class="Funnel-Andere m-1.5 bg-blue-200 flex-flow flex-col p-1 rounded-2xl text-2xl font-normal hidden">
-        <p class="p-2">Wir haben heute ein besonderes Angebot und einen Rabatt für Sie, weil Sie bereits bei uns eingekauft haben und wir Sie gerne wieder als zufriedenen Kunden begrüßen möchten.</p>
-       </div>
-    </div>
-    <!--#endregion -->
+    
     <!--#region Lieferung-->
     <div
       class="Lieferung w-full h-fit bg-red-300 flex flex-flow flex-col p-1">
